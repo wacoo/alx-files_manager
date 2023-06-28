@@ -9,7 +9,7 @@ import { join as joinPath } from 'path';
 // import { Request, Response } from 'express';
 import { contentType } from 'mime-types';
 import mongoDBCore from 'mongodb/lib/core';
-import dbClient from '../utils/db';
+import { dbClient } from '../utils/db';
 import { getUserFromXToken } from '../utils/auth';
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable no-unused-vars */
