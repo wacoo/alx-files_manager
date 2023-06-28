@@ -5,8 +5,8 @@ const { MongoClient } = require('mongodb');
 // Connection URL
 const url = 'mongodb://0.0.0.0:27017';
 const opt = {
-    useUnifiedTopology: true
-  }
+  useUnifiedTopology: true,
+};
 const client = new MongoClient(url, opt);
 
 // Database Name

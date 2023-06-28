@@ -1,8 +1,13 @@
 /* Express server */
+import express from 'express';
+import startServer from './libs/boot';
+import addRoutes from './routes';
+import addMiddlewares from './libs/middlewares';
 
-const  express = require('express');
 const app = express();
-const port = process.env.PORT | 5000;
 
+addMiddlewares(app);
+addRoutes(app);
+startServer(app);
 
-
+export default app;
